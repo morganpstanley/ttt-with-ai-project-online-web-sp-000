@@ -9,10 +9,7 @@ module Players
        @token == "X" ? "O" : "X"
      end
 
-
-
     def move(board)
-
       move = ""
 
       Game::WIN_COMBINATIONS.each do |combo|
