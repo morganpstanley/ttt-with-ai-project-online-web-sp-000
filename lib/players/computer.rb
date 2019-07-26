@@ -44,7 +44,7 @@ module Players
         end
       end
       if move == ""
-        until board.valid_move?("#{move}") == true
+        until board.valid_move?("#{move+1}") == true
           move = (0..8).to_a.sample
         end
       end
