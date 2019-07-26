@@ -49,6 +49,7 @@ module Players
         end
         move -= 1
       end
+      sleep(1)
       (move+1).to_s
     end
 
