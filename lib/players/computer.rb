@@ -49,7 +49,6 @@ module Players
         end
         move -= 1
       end
-      binding.pry
       (move+1).to_s
     end
 
