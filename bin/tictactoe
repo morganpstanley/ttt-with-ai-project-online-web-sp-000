@@ -10,20 +10,20 @@ puts "Please type in the number of Players:
 2: 2 Players  0 Computers"
 input = gets.strip
 if input == "0"
-  game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+  game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
 end
 if input == "1"
   puts "Would you like to be 'X' or 'O'?"
   input = gets.strip
   if input == "X"
-    game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+    game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
   end
   if input == "O"
-    game = Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
+    game = Game.new(Players::Computer.new("X"), Players::Human.new("O"))
   end
 end
 if input == "2"
-  game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+  game = Game.new(Players::Human.new("X"), Players::Human.new("O"))
 end
 
 game.play

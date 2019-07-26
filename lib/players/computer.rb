@@ -43,13 +43,13 @@ module Players
           end
         end
       end
-
       if move == ""
         until board.valid_move?("#{move}") == true
           move = (0..8).to_a.sample
         end
       end
-      (move-1).to_s
+      sleep(1)
+      (move+1).to_s
     end
 
   end
