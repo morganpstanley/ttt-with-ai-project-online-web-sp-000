@@ -48,7 +48,7 @@ module Players
           move = (0..8).to_a.sample
         end
       end
-      sleep(1)
+      binding.pry
       (move+1).to_s
     end
 
